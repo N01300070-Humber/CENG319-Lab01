@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LifeCycleFragment">
+
+    <TextView
+        android:id="@+id/textViewLifeCycleLogTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/life_cycle_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ScrollView
+        android:id="@+id/scrollViewLifeCycleLog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/textViewLifeCycleLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </ScrollView>
+
+</LinearLayout>

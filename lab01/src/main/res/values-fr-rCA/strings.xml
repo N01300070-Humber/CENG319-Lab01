@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CENG-319 Lab 1</string>
+    <string name="life_cycle_title">État du cycle de vie</string>
+    <string name="onStartExecuted">onStart exécuté</string>
+    <string name="onCreateExecuted">onCreate exécuté</string>
+    <string name="onDestroyExecuted">onDestroy exécuté</string>
+    <string name="onStopExecuted">onStop exécuté</string>
+    <string name="onCreateViewExecuted">onCreateView exécuté</string>
+</resources>

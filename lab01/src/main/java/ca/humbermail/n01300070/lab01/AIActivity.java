@@ -29,17 +29,17 @@ public class AIActivity extends AppCompatActivity {
 	}
 	
 	@Override
-	protected void onDestroy() {
-		super.onDestroy();
-		
-		lifeCycleFragment.appendToLifeCycleLog(getString(R.string.onDestroyExecuted));
-	}
-	
-	@Override
 	protected void onStop() {
 		super.onStop();
 		
 		lifeCycleFragment.appendToLifeCycleLog(getString(R.string.onStopExecuted));
+	}
+	
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		
+		lifeCycleFragment.appendToLifeCycleLog(getString(R.string.onDestroyExecuted));
 	}
 	
 	@Nullable

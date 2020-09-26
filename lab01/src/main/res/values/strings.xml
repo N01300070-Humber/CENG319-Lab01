@@ -2,10 +2,6 @@
 	<string name="app_name">CENG-319 Lab 1</string>
 	<string name="life_cycle_title">Life Cycle Status</string>
 	<string name="title_activity_ai" translatable="false">AIActivity</string>
-	<!--
-	This string is used for square devices and overridden by hello_world in
-	values-round/strings.xml for round devices.
-	-->
 	<string name="title_activity_vr" translatable="false">VRActivity</string>
 	<string name="onStartExecuted">onStart executed</string>
 	<string name="onCreateExecuted">onCreate executed</string>

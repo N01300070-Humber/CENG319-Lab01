@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.ListFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -15,6 +16,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import java.util.Objects;
 
 /**
  * A fragment representing a list of Items.
@@ -33,7 +36,7 @@ public class ActivitySelectFragment extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_activity_select_list, container, false);
 
-        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<String>(getActivity(),
+        ArrayAdapter<String> stringArrayAdapter = new ArrayAdapter<>(Objects.requireNonNull(getActivity()),
                 android.R.layout.simple_list_item_1, activities);
         setListAdapter(stringArrayAdapter);
         
@@ -41,7 +44,7 @@ public class ActivitySelectFragment extends ListFragment {
     }
     
     @Override
-    public void onListItemClick(ListView listView, View view, int position, long id) {
+    public void onListItemClick(@NonNull ListView listView, @NonNull View view, int position, long id) {
         Intent intent;
     
         switch (position) {

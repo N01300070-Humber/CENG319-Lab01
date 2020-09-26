@@ -14,6 +14,8 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Objects;
+
 public class LifeCycleFragment extends Fragment {
     TextView lifeCycle;
     
@@ -40,7 +42,7 @@ public class LifeCycleFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
     
-        lifeCycle = getView().findViewById(R.id.textViewLifeCycleLog);
+        lifeCycle = Objects.requireNonNull(getView()).findViewById(R.id.textViewLifeCycleLog);
     }
     
     public void appendToLifeCycleLog(String string) {
